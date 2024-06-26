@@ -12,7 +12,7 @@ char notes[] = "GGAGcB GGAGdc GGxecBA yyecdc";
 
 int beats[] = {2, 2, 8, 8, 8, 16, 1, 2, 2, 8, 8, 8, 16, 1, 2, 2, 8, 8, 8, 8, 16, 1, 2, 2, 8, 8, 8, 16};
 
-int tempo = 100;  // Tempo lebih cepat
+int tempo = 50;  // Tempo lebih cepat
 
 void playTone(int tone, int duration) {
   for (long i = 0; i < duration * 1000L; i += tone * 2) {
@@ -52,7 +52,7 @@ void loop() {
       } else {
         playNote(notes[i], beats[i] * tempo);
 
-   Kedipkan lampu LED sesuai irama
+   \\ Kedipkan lampu LED sesuai irama
     digitalWrite(led1, HIGH);
     delay(beats[i] * tempo / 3);
     digitalWrite(led1, LOW);
